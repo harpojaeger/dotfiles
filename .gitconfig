@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Harpo Jaeger
+	email = harpo.jaeger@gmail.com
+
+[alias]
+  st = status
+  amend = commit --amend
+  ap = add -p
