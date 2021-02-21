@@ -1,10 +1,19 @@
-# This is Git's per-user configuration file.
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
 [user]
-# Please adapt and uncomment the following lines:
 	name = Harpo Jaeger
 	email = harpo.jaeger@gmail.com
-
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = vim
 [alias]
-  st = status
-  amend = commit --amend
-  ap = add -p
+	stat = "!git fetch && git status"
+	st = status -s
+	ap = add -p
+	tackon = commit --amend --no-edit
+	plog = log --pretty=oneline
