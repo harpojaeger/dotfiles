@@ -2,5 +2,6 @@
 
 if [[ $(sudo apt list --upgradable 2>/dev/null | wc -l) -gt 1 ]]
 	then
-	echo "Updates are available."
+	echo "Updates are available:\n"
+	sudo apt list -u | sed '1d'
 fi
