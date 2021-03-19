@@ -104,3 +104,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 alias t="todo-txt -d ~/Dropbox/todo/todo.cfg"
 
+alias yeet='rm -rf'
+alias please=sudo
