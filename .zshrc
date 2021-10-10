@@ -106,3 +106,4 @@ alias t="todo-txt -d ~/Dropbox/todo/todo.cfg"
 
 alias yeet='rm -rf'
 alias please=sudo
+EDITOR=/usr/bin/nvim
