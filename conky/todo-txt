@@ -1,3 +1,6 @@
 #!/bin/zsh
 
+# The following regex replacements target ANSI escape sequences. Specifically,
+# they swap out color codes defined in todo.cfg for roughly-corresponding codes
+# in conky. Changes to todo.cfg will necessitate adjustment of these regexes.
 /usr/bin/todo-txt -d ~/Dropbox/todo/todo.cfg | sed 's/^.*64m/\${color green}/; s/^.*208m/\${color orange}/; s/^.*1m/\${color red}/; s/.\[0m/\$color/'
