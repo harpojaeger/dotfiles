@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+/usr/bin/todo-txt -d ~/Dropbox/todo/todo.cfg
