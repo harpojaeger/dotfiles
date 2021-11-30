@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-/usr/bin/todo-txt -d ~/Dropbox/todo/todo.cfg | sed 's/^.*\[48;5;64m/\${color green}/'
+/usr/bin/todo-txt -d ~/Dropbox/todo/todo.cfg | sed 's/^.*64m/\${color green}/'
