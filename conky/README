@@ -1,1 +1,3 @@
 Scripts & config files for conky
+
+Run conky -c /path/to/the/config/file to activate.
