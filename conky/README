@@ -1,3 +1,6 @@
 Scripts & config files for conky
 
 Run conky -c /path/to/the/config/file to activate.
+
+To configure conky to run at login, ensure .profile is symlinked into ~/.
+
