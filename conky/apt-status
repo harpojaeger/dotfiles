@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-AVAIL_UPGRADES_COUNT=$(sudo apt list --upgradable 2>/dev/null | wc -l)
-if [[ $AVAIL_UPGRADES_COUNT -gt 1 ]]
+let "AVAIL_UPGRADES_COUNT=$(sudo apt list --upgradable 2>/dev/null | wc -l) - 1"
+if [[ $AVAIL_UPGRADES_COUNT -gt 0 ]]
 	then
 	echo "$AVAIL_UPGRADES_COUNT updates available.\n"
 fi
